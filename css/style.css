@@ -1,0 +1,1297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+   
+    padding-top: 60px; 
+    background-color: #f9f9f9; 
+}
+ 
+
+
+.container {
+  width: 100%;
+  width: 1300px; 
+  margin: auto;
+  background: #ffffff;
+  padding: 20px; 
+  border-radius: 8px; 
+ 
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; 
+    z-index: 1000; 
+
+
+-webkit-box-shadow: 0px 5px 7px -5px rgba(34, 60, 80, 0.6);
+-moz-box-shadow: 0px 5px 7px -5px rgba(34, 60, 80, 0.6);
+box-shadow: 0px 5px 7px -5px rgba(34, 60, 80, 0.6);
+
+}
+
+.header__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.header__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.header__item {
+  position: relative;
+  margin-right: 20px;
+}
+
+.header__link{
+  /* Bosh sahifa */
+
+
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 24px;
+/* identical to box height, or 160% */
+
+color: #000000;
+
+text-decoration: none;
+
+
+
+
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  list-style: none;
+  padding: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.dropdown-menu li {
+  padding: 5px 15px;
+}
+
+.dropdown-menu li a {
+  color: #000;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.header__button{
+/* phone-number */
+/* +998 90 921 37 11 */
+
+width: 128px;
+height: 24px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 24px;
+/* identical to box height, or 160% */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Auto layout */
+
+width: 160px;
+height: 40px;
+right: 100px;
+top: 2px;
+
+/* blue */
+background: #00BAFC;
+border-radius: 5px;
+
+border: none;
+
+}
+
+/*NAVBAR*/
+
+.navbar{
+  width: 100%;
+  margin-top: 70px;
+  height: 418px;
+
+}
+
+.navbar__wrapper{
+  width: 1300px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 170px;
+}
+
+.navbar__title{
+  /* promo-heading */
+
+width: 470px;
+height: 78px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 130%;
+/* or 39px */
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: flex-start;
+flex-grow: 0;
+
+}
+
+.navbar__text{
+  /* promo-text */
+
+width: 465px;
+height: 74px;
+margin-top: 20px;
+/* body-text */
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: center;
+flex-grow: 0;
+
+}
+
+
+.navbar__right{
+  width: 470px;
+  height: 225px;
+  
+}
+
+.navbar__button{
+  /* button */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 8px 16px;
+gap: 10px;
+
+width: 232px;
+height: 40px;
+
+/* blue */
+background: #00BAFC;
+border-radius: 5px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: flex-start;
+flex-grow: 0;
+border: none;
+
+
+/* Xizmatlar bilan tanishish */
+
+margin-top: 20px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+
+.article{
+  width: 100%;
+  margin-top: 50px;
+  height: 900px;
+}
+
+.article__wrapper{
+
+
+  /* services */
+height: 900px;
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+
+
+
+background: #FFFFFF;
+
+}
+
+.article__title{
+  
+/* section-title */
+
+width: 117px;
+height: 31px;
+
+/* section-title */
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 130%;
+/* or 31px */
+text-align: center;
+
+color: #000000;
+
+}
+
+.article__text{
+  margin-top: 16px;
+  /* promo-text */
+
+width: 719px;
+height: 48px;
+
+/* body-text */
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+text-align: center;
+
+color: #000000;
+
+
+/* Inside auto layout */
+
+
+}
+
+.article__cards{
+  gap: 110px;
+  display: flex;
+  margin-top: 16px;
+  width: 1300px;
+  height: 576px;
+  flex-wrap: wrap;
+}
+
+.article__card{
+/* service */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 24px;
+gap: 16px;
+
+
+width: 320px;
+height: 260px;
+
+
+background: #FFFFFF;
+box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+border-radius: 5px;
+
+}
+
+.article__card-title{
+  /* service-name */
+
+width: 146px;
+height: 26px;
+
+/* subsection-title */
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 130%;
+/* identical to box height, or 26px */
+text-align: center;
+
+color: #000000;
+
+
+/* Inside auto layout */
+
+
+}
+
+.article__card-text{
+  /* service-short-info */
+
+width: 95px;
+height: 24px;
+
+/* body-text */
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+text-align: center;
+
+color: #000000;
+
+
+
+
+}
+
+.article__button{
+  margin-top: 100px;
+ /* button */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+border: none;
+
+gap: 10px;
+
+
+width: 167px;
+height: 40px;
+
+
+/* blue */
+background: #00BAFC;
+border-radius: 5px;
+
+/* Buyurtma berish */
+
+
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+
+
+}
+
+
+.article__minicontainer{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+
+.article__link{
+  /* Xizmatlar sahifasiga o’tish */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+
+margin-top: 90px;
+
+
+
+/* Xizmatlar sahifasiga o’tish */
+
+width: 192px;
+height: 24px;
+
+/* link */
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+text-align: center;
+text-decoration-line: underline;
+
+/* blue */
+color: #00BAFC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+}
+
+
+
+
+.services{
+  width: 100%;
+  margin-top: 50px;
+  height: 1675px;
+}
+
+.services__wrapper{
+
+width: 1300px;
+
+  /* services */
+height: 900px;
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+
+
+
+background: #FFFFFF;
+
+}
+
+
+.services__title{
+  /* section-title */
+
+width: 262px;
+height: 31px;
+margin: auto;
+/* section-title */
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 130%;
+/* or 31px */
+text-align: center;
+
+color: #000000;
+
+
+/* Inside auto layout */
+
+
+}
+
+
+.services__text{
+  /* section-text */
+margin: auto;
+width: 719px;
+height: 48px;
+
+/* body-text */
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+text-align: center;
+
+color: #000000;
+
+
+margin-top: 10px;
+}
+
+.service__cards{
+  margin-top: 10px;
+  width: 1300px;
+  height: 1373px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service__card{
+  /* step */
+margin: auto;
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 32px;
+
+width: 832px;
+height: 278px;
+
+
+/* Inside auto layout */
+
+
+}
+
+.service__title{
+  /* steo-name */
+
+width: 277px;
+height: 26px;
+
+/* subsection-title */
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 130%;
+/* identical to box height, or 26px */
+text-align: center;
+
+color: #000000;
+
+
+/* Inside auto layout */
+
+
+}
+
+.service__text{
+  /* step-description */
+
+width: 493px;
+height: 48px;
+
+/* body-text */
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+
+color: #000000;
+
+
+/* Inside auto layout */
+margin-left: 20px;
+
+}
+
+.service__card:nth-child(2),
+.service__card:nth-child(4) {
+    flex-direction: row-reverse; /* Меняем порядок элементов */
+}
+
+
+.services__button{
+  /* button */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+margin: auto;
+
+gap: 10px;
+margin-top: 10px;
+width: 167px;
+height: 40px;
+
+
+/* blue */
+background: #00BAFC;
+border-radius: 5px;
+
+
+/* Buyurtma berish */
+
+
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+color: #FFFFFF;
+
+opacity: 0.48;
+
+/* Inside auto layout */
+border: none;
+
+}
+
+
+
+
+
+
+
+.order {
+  width: 100%;
+  height: 543px;
+  background-color: #00bafc;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.order__wrapper {
+  width: 350px;
+  height: 304px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.order__title {
+  /* section-title */
+
+margin-left: 70px;
+margin-bottom: 10px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 130%;
+/* or 31px */
+text-align: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+
+
+}
+
+.order__text{
+height: 48px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+text-align: center;
+
+
+color: #FFFFFF;
+
+
+
+
+}
+
+.order__description {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.order__form {
+  width: 350px;
+  height: 304px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #ffffff;
+}
+
+.order__input, 
+.order__select {
+  background-color: lightgrey;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.order__button {
+  padding: 12px;
+  background-color: rgb(34, 163, 192);
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.order__button:hover {
+  background-color: #00BAFC;
+}
+
+
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.footer__wrapper{
+  width: 1300px;
+  gap: 90px;
+}
+
+.footer__content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer__section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer__copyright-title {
+  /* site-copy */
+
+
+
+
+/* subsection-title */
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 130%;
+/* identical to box height, or 26px */
+
+color: #FFFFFF;
+
+
+
+}
+
+.footer__copyright__text{
+  /* site-copy-text */
+
+margin-top: 10px;
+width: 320px;
+height: 120px;
+
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+
+color: #FFFFFF;
+
+
+}
+
+.footer__links ul, .footer__social ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer__links li, .footer__social li {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+
+
+
+.dropdown {
+  position: relative;
+  display: flex;
+}
+
+
+.dropdown__button {
+  width: 100%;
+  background-color: lightgray;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+
+
+
+.dropdown__content {
+  display: none;
+  position: absolute; 
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1; 
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+
+.dropdown__content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown__content a:hover {
+  background-color: #f1f1f1;
+}
+
+
+.dropdown:hover .dropdown__content {
+  display: block;
+}
+
+
+.footer__wrapper{
+  display: flex;
+  width: 1300px;
+}
+
+
+
+.header__link:hover ,
+.header__link:active{
+/* sitenav-item */
+
+/* Auto layout */
+text-decoration: underline;
+
+}
+
+
+.header__button:hover{
+  /* phone-number */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 8px 16px;
+
+
+width: 160px;
+height: 40px;
+
+background: #FFFFFF;
+/* blue */
+border: 3px solid #00BAFC;
+border-radius: 5px;
+
+/* +998 90 921 37 11 */
+
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 24px;
+/* identical to box height, or 160% */
+
+/* blue */
+color: #00BAFC;
+
+
+
+
+}
+
+
+
+.footer__copyright-text{
+  /* Vector */
+
+/* Bosh sahifa */
+margin-top: 10px;
+
+width: 80px;
+height: 24px;
+
+/* body-text */
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* blue */
+color: #00BAFC;
+
+
+/* Inside auto layout */
+
+}
+
+.footer__social-card{
+  display: flex;
+  margin-top: 10px;
+  vertical-align: center;
+  justify-content: center;
+}
+
+.footer__social li{
+  /* Telegram */
+
+
+/* Telegram */
+
+width: 65px;
+height: 24px;
+
+/* body-text */
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* blue */
+color: #00BAFC;
+
+
+
+
+
+
+}
+
+.footer__social img{
+  /* instagram */
+
+width: 22px;
+height: 24px;
+
+
+margin-right: 5px;
+
+}
+
+
+.footer__social li:hover ,
+.footer__copyright-text:hover
+{
+  /* Bosh sahifa */
+
+
+/* Bosh sahifa */
+
+
+
+/* body-text */
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* blue */
+color: #00BAFC;
+
+opacity: 0.6;
+
+/* Inside auto layout */
+
+
+}
+
+.header__button:active{
+  /* phone-number */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+
+
+width: 160px;
+height: 40px;
+
+
+background: rgba(0, 186, 252, 0.6);
+border-radius: 5px;
+
+/* +998 90 921 37 11 */
+
+
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 24px;
+/* identical to box height, or 160% */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+
+
+
+}
+
+.header__link:active{
+  /* sitenav-item */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+
+
+width: 80px;
+height: 45px;
+
+background: rgba(25, 25, 25, 0.7);
+
+/* Inside auto layout */
+
+}
+
+.dropdown-menu{
+  width: 124px;
+
+}
+
+
+.dropdown-menu li a:hover {
+  /* dropdown-menu */
+
+/* Auto layout */
+display: flex;
+
+
+
+
+align-items: center;
+justify-content: center;
+
+background: cyan;
+
+box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+border-radius: 5px;
+
+}
+
+
+.dropdown-menu li a:active {
+  background-color: #00aaff; 
+  color: #fff; 
+  transform: scale(0.98); 
+  transition: transform 0.1s ease-in-out;
+}
+
+
+.navbar__button:hover{
+  /* button */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+
+gap: 10px;
+
+
+width: 232px;
+height: 40px;
+
+
+background: rgba(0, 186, 252, 0.8);
+border-radius: 5px;
+
+}
+
+.navbar__button:active{
+  /* button */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+gap: 10px;
+
+
+width: 232px;
+height: 40px;
+
+
+background: rgba(0, 186, 252, 0.6);
+border-radius: 5px;
+
+}
+
+.article__card:hover{
+/* service */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+
+gap: 16px;
+
+
+width: 320px;
+height: 260px;
+
+
+
+background: #FFFFFF;
+box-shadow: 0px 12px 21px rgba(0, 0, 0, 0.1);
+border-radius: 5px;
+
+}
+
+.article__card:active{
+  /* service */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 16px;
+
+width: 320px;
+height: 260px;
+
+
+background: #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+border-radius: 5px;
+
+}
+
+
+.dropdown__button{
+  /* select */
+/* select */
+
+width: 350px;
+height: 30px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* input */
+
+
+
+
+
+/* light-grey */
+background: #F3F3F3;
+border-radius: 5px;
+
+
+/* Xizmat turi */
+
+
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+text-align: center;
+
+color: #000000;
+
+
+
+/* Group 1 */
+
+
+
+
+/* Polygon 1 */
+
+
+
+
+
+
+}
